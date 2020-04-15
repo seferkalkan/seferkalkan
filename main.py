@@ -45,7 +45,7 @@ def response(voice):
         speak(search + 'İçin Bulduklarım')
     if 'tamamdır' in voice:
         speak('Görüşürüz')
-        exit()
+        sys.exit()
 
 def speak(string):
     tts = gTTS(string,lang='tr')
